@@ -1,13 +1,20 @@
 #!/usr/bin/env bash
 
-apt-get -y update
+sudo apt-get -y update
 
-# nginx install
-apt-get -y install nginx
+# nginx install and start
+sudo apt-get -y install nginx
+sudo service nginx start
 
 # set up nginx server
-rm -rf /usr/share/nginx/html/
-ln -s /vagrant/www /usr/share/nginx/html
+sudo cp /vagrant/.provision/nginx/default /etc/nginx/sites-available/default
+sudo chmod 644 /etc/nginx/sites-available/default
+sudo rm -rf /etc/nginx/sites-enabled
+sudo ln -s /etc/nginx/sites-available /etc/nginx/sites-enabled
 
-# nginx start
-service nginx start
+# Site root configuration
+sudo rm -rf /var/www
+sudo ln -s /vagrant/www /var/www
+
+# nginx restart
+sudo service nginx restart
