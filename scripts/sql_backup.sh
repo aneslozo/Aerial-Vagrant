@@ -8,7 +8,7 @@
 # CONSTANTS
 # postgres home folder backups directory
 # !! DO NOT specify trailing '/' as it is included below for readability !!
-BACKUP_DIRECTORY="/var/lib/pgsql/backups"
+BACKUP_DIRECTORY="/var/lib/postgresql/9.3/main/backup"
 
 # Date stamp (formated YYYYMMDD)
 # just used in file name
