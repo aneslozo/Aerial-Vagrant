@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 
+echo ****************************************************************
+echo ****** Checking that the apt-get repository is up to date ******
+echo ****************************************************************
 #Checking that the apt-get repository is up to date
-sudo apt-get -y update
+apt-get -y update
 
+echo *******************************************************
+echo ****** Instaling, configuring and starting nginx ******
+echo *******************************************************
 #Instaling & Starting nginx
-sudo apt-get -y install nginx
-sudo service nginx start
-
+apt-get -y install nginx
+service nginx start
 #Configuring nginx server
-sudo rm -rf /etc/nginx/sites-enabled
-sudo cp -r /vagrant/nginx/sites-enabled /etc/nginx
+rm -Rf /etc/nginx/sites-enabled
+cp -R /vagrant/nginx/sites-enabled /etc/nginx
 
 #Restarting nginx
-sudo service nginx restart
+service nginx restart
