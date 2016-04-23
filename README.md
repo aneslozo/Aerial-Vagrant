@@ -1,6 +1,6 @@
-#Aerial DEMO
+#Aerial HTML5
 
-This is first demo with a few issues. A new version is coming soon.
+This example shows how to quickly get up and running with Vagrant, to create and use local Virtual Machines as development environments, all with a single command.
 
 ##Get it running
 
