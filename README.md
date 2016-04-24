@@ -1,6 +1,10 @@
-#Aerial HTML5
+#Aerial by HTML5 UP
 
 This example shows how to quickly get up and running with Vagrant, to create and use local Virtual Machines as development environments, all with a single command.
+
+#Vagrant
+
+Vagrant provides easy to configure, reproducible, and portable work environments built on top of industry-standard technology and controlled by a single consistent workflow to help maximize the productivity and flexibility of you and your team.
 
 ##Get it running
 
