@@ -10,7 +10,7 @@ Vagrant provides easy to configure, reproducible, and portable work environments
 
 Clone the project:
 
-    git clone git@github.com:aneslozo/Aerial-Vagrant.git
+    git clone git@github.com:aneslozo/Aerial-by-HTML5-UP.git
 
 Download VirtualBox at [https://www.virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads "VirtualBox - Downloads") and install it.  
 Download Vagrant at [https://www.vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html "Vagrant - Downloads") and install it.
