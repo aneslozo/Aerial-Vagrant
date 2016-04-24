@@ -15,4 +15,10 @@ Vagrant.configure(2) do |config|
   config.vm.synced_folder "www", "/vagrant/www"
   config.vm.synced_folder ".provision/nginx/sites-enabled", "/vagrant/nginx/sites-enabled"
   config.vm.synced_folder ".provision/postgresql/main", "/vagrant/postgresql/main"
+
+  #VM Hardware Configuration
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+    v.cpus = 2
+  end
 end
